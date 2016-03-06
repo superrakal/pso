@@ -1,0 +1,48 @@
+html
+  height: auto
+  min-height: 100%
+  font-size: 100%
+body
+  height: auto
+  min-height: 100%
+  background: asset_url("background.png") center no-repeat
+  background-size: cover
+
+*:focus
+  box-shadow: none !important
+  outline: none !important
+
+
+.logo
+  height: 100px
+  line-height: 100px
+  margin: -20px 0 20px 0
+  img
+    height: 70px
+    &.gif
+      height: 180px
+      margin: -20px -55px 0 -55px
+
+
+.nav-pills
+  & > li
+    background-color: #f3f3f3
+    border: 1px solid #2655A3
+    a
+      color: #2655A3
+      font-weight: bold
+      &.active, &.active:hover
+        background-color: #2655A3
+        color: white
+
+
+.well
+  border-radius: 0 !important
+  color: #fff
+
+.modal-content
+  border-radius: 0 !important
+  height: 275px
+
+.success_message
+  display: none

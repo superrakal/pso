@@ -1,0 +1,23 @@
+development:
+  clients:
+    default:
+      database: pso_development
+      hosts:
+        - localhost:27017
+test:
+  clients:
+    default:
+      database: pso_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
+
+production:
+  clients:
+    default:
+      database: pso_production
+      hosts:
+        - localhost:27017
