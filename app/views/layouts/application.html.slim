@@ -93,13 +93,14 @@ html lang="ru"
                 .form-group
                   textarea.form-control#message placeholder="Сообщение" name="message" required=true
         .modal-footer
-          button.btn.btn-primary type="submit"  Отправить
+          button.btn.btn-primary#send_button type="submit"  Отправить
       .success_message.text-center.animated.flipInX
         h3 Ваше сообщение успешно отправлено!
         i.fa.fa-envelope.fa-5x
 
 coffee:
   $('#message_modal form').submit ->
+    $('#send_button').text('Идет отправка...').prop('disabled', true)
     $.ajax
       type: "POST"
       url: '/send_message'

@@ -1,4 +1,4 @@
-class MessageMailer < ApplicationMailer
+class MessageMailer <  ActionMailer::Base
   def new_message(name, email, message)
     @name = name
     @email = email
