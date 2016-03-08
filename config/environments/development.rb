@@ -23,6 +23,12 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { address: 'localhost', port: 1025 }
-  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'pso.kz'}
+  config.action_mailer.smtp_settings = {
+      :port           => 587,
+      :address        => "smtp.gmail.com",
+      :domain         => "pso.kz",
+      :user_name      => "noreply.psokzbot@gmail.com",
+      :password       => "basset2011",
+      :authentication => :plain}
 end
