@@ -1,0 +1,19 @@
+ru:
+  mongoid:
+    models:
+      about_us_page: Страница "О нас"
+      admin: Администратор
+      category: Категории
+      contacts_page: Страница "Контакты"
+      main_page: Страница "Главная"
+
+    attributes:
+      about_us_page:
+        content: Содержание
+      category:
+        name: Имя
+        content: Содержание
+      contacts_page:
+        content: Содержание
+      main_page:
+        content: Содержание

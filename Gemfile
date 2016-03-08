@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'animate-rails'
 
 gem 'rails_admin', '~> 0.7.0'
+gem 'devise'
 gem 'ckeditor'
 
 gem 'mongoid'

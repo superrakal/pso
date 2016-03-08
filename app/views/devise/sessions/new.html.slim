@@ -1,0 +1,14 @@
+.login-form
+  h2 Вход в админ-панель
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .form-group
+      = f.label :email
+      br
+      = f.email_field :email, autofocus: true, class:"form-control"
+    .form-group
+      label Пароль
+      br
+      = f.password_field :password, autocomplete: "off", class:"form-control"
+    .form-group
+      = f.submit "Войти", class: "btn btn-primary btn-block"
+
