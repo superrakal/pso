@@ -22721,3 +22721,99 @@ vdC1INC90YPQttC90L4uPC9zbWFsbD48L2hyPg==
 
   Rendered text template (0.0ms)
 Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-09 10:13:56 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.0007798260000000001s
+  Rendered main/index.html.slim within layouts/application (9.8ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000613225s
+Completed 200 OK in 942ms (Views: 932.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-09 10:13:57 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000234643s
+  Rendered main/index.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000347115s
+Completed 200 OK in 53ms (Views: 52.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-03-09 10:14:00 +0600
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-03-09 10:14:00 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.slim within layouts/application (11.9ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000288079s
+Completed 200 OK in 77ms (Views: 75.1ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-03-09 10:14:02 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BPfNuMrXGk/WPyBFALWusYg5DWfY0x7Nt5ixGlThVgT86gQecrk4KNZL0CcYVwtg31XCk+hlH4lDNIoRJsBYRQ==", "admin"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Войти"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"admins", "filter"=>{"email"=>"admin@example.com"}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000696445s
+MONGODB | localhost:27017 | pso_development.update | STARTED | {"update"=>"admins", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('56deabb5d3054d11a9b5cf53')}, "u"=>{"$set"=>{"last_sign_in_at"=>2016-03-08 10:41:19 UTC, "current_sign_in_at"=>2016-03-09 04:14:02 UTC, "sign_in_count"=>4}}, "multi"=>false, "upsert"=>false...
+MONGODB | localhost:27017 | pso_development.update | SUCCEEDED | 0.000492024s
+Redirected to http://localhost:3000/admin/
+Completed 302 Found in 77ms
+
+
+Started GET "/admin/" for 127.0.0.1 at 2016-03-09 10:14:02 +0600
+Processing by RailsAdmin::MainController#dashboard as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"admins", "filter"=>{"_id"=>BSON::ObjectId('56deabb5d3054d11a9b5cf53')}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000381648s
+MONGODB | localhost:27017 | pso_development.count | STARTED | {"count"=>"admins", "query"=>{}}
+MONGODB | localhost:27017 | pso_development.count | SUCCEEDED | 0.000260577s
+MONGODB | localhost:27017 | pso_development.count | STARTED | {"count"=>"categories", "query"=>{}}
+MONGODB | localhost:27017 | pso_development.count | SUCCEEDED | 0.00010499100000000001s
+MONGODB | localhost:27017 | pso_development.count | STARTED | {"count"=>"main_pages", "query"=>{}}
+MONGODB | localhost:27017 | pso_development.count | SUCCEEDED | 0.000138274s
+MONGODB | localhost:27017 | pso_development.count | STARTED | {"count"=>"contacts_pages", "query"=>{}}
+MONGODB | localhost:27017 | pso_development.count | SUCCEEDED | 0.000136856s
+MONGODB | localhost:27017 | pso_development.count | STARTED | {"count"=>"about_us_pages", "query"=>{}}
+MONGODB | localhost:27017 | pso_development.count | SUCCEEDED | 0.000149412s
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (11.7ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.2ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_navigation.html.haml (12.7ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (3.5ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/layouts/rails_admin/pjax.html.haml (2.5ms)
+Completed 200 OK in 355ms (Views: 271.9ms)
+
+
+Started GET "/admin/category?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2016-03-09 10:14:04 +0600
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"admins", "filter"=>{"_id"=>BSON::ObjectId('56deabb5d3054d11a9b5cf53')}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.0005345699999999999s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "limit"=>20, "skip"=>0, "sort"=>{"_id"=>-1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000334326s
+MONGODB | localhost:27017 | pso_development.count | STARTED | {"count"=>"categories", "query"=>{}}
+MONGODB | localhost:27017 | pso_development.count | SUCCEEDED | 0.000334006s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "limit"=>20, "skip"=>0, "sort"=>{"_id"=>-1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000287011s
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (38.4ms)
+Completed 200 OK in 50ms (Views: 44.8ms)
+
+
+Started GET "/admin/category/56d8242ad3054d29b3400234/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2016-03-09 10:14:07 +0600
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"category", "id"=>"56d8242ad3054d29b3400234"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"admins", "filter"=>{"_id"=>BSON::ObjectId('56deabb5d3054d11a9b5cf53')}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00038581900000000003s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"_id"=>BSON::ObjectId('56d8242ad3054d29b3400234')}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00033172100000000004s
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_field.html.haml (0.9ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/rails_admin/main/_form_ck_editor.html.haml (1.4ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/rails_admin/main/_submit_buttons.html.haml (3.0ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/rails_admin-0.7.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (15.0ms)
+Completed 200 OK in 31ms (Views: 25.6ms)
