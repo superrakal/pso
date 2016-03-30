@@ -13,6 +13,7 @@ ru:
       category:
         name: Имя
         content: Содержание
+        image: Изображение
       contacts_page:
         content: Содержание
       main_page:

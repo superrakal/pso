@@ -27,6 +27,7 @@ RailsAdmin.config do |config|
   config.model Category do
     field :name
     field :content, :ck_editor
+    field :image
   end
 
   config.model MainPage do
