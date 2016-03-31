@@ -9,69 +9,77 @@ html lang="ru"
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    .container-fluid
-      .row
-        .container-fluid
-          .col-lg-3.col-sm-6.col-xs-12
-            = link_to root_path
-              .logo
-                = image_tag "logo_left.png"
-                = image_tag "logo.gif", :class => "gif"
-                = image_tag "logo_right.png"
-      .row
-        .container-fluid
-          nav.navbar.navbar-default
-            .container-fluid
-              .navbar-header
-                button.navbar-toggle.collapsed aria-expanded="false" data-target="top-menu" data-toggle="collapse" type="button"
-                  span.sr-only Toggle navigation
-                  span.icon-bar
-                  span.icon-bar
-                  span.icon-bar
-              #top-menu.collapse.navbar-collapse
-                ul.nav.navbar-nav
-                  li
-                    = link_to root_path
-                      |Главная
-                  li
-                    = active_link_to about_us_path
-                      |О нас
-                  li
-                    a href="#"
-                      i.fa.fa-download
-                      |&nbsp;Скачать прайс
-                ul.nav.navbar-nav.navbar-right
-                  li
-                    a href="#" data-target="#message_modal" data-toggle="modal"
-                      i.fa.fa-envelope-o
-                      |&nbsp;Написать нам
-                  li
-                    = active_link_to contacts_path
-                      |Контакты
-      .row
-        .container-fluid
-          h1
-            = @title
-          h2.text-center.text-danger Сайт находится в разработке
-      .row
-        .container-fluid
-          .well.well-lg.text-uppercase.text-center
-            |Компания ТОО «ПромСнабОборудование» является представителем от ведущих Заводов Российских производителей,
-            |так же занимается поставкой оборудования для промышленных предприятий и частных лиц.
-            br
-            |Мы оказываем полный спектр услуг в этом направлении: консультации по выбору оборудования, обработка заявки,
-            |&nbsp;подготовка полного пакета документов, отгрузка оборудования по всему Казахстану.
-      .row
-        .col-lg-2
-          ul.nav.nav-pills.nav-stacked
-            - @categories.each do |category|
-              li
-                = active_link_to category_path category.number
-                  = category.name
-        .col-lg-10
+    .site-wrapper
+      #bg
+      .container-fluid
+        .row
           .container-fluid
-            = yield
-
+            .col-lg-3.col-sm-6.col-xs-12
+              = link_to root_path
+                .logo
+                  = image_tag "logo_left.png"
+                  = image_tag "logo.gif", :class => "gif"
+                  = image_tag "logo_right.png"
+        .row
+          .container-fluid
+            nav.navbar.navbar-default
+              .container-fluid
+                .navbar-header
+                  button.navbar-toggle.collapsed aria-expanded="false" data-target="top-menu" data-toggle="collapse" type="button"
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                #top-menu.collapse.navbar-collapse
+                  ul.nav.navbar-nav
+                    li
+                      = link_to root_path
+                        |Главная
+                    li
+                      = active_link_to about_us_path
+                        |О нас
+                    li
+                      a href="#"
+                        i.fa.fa-download
+                        |&nbsp;Скачать прайс
+                  ul.nav.navbar-nav.navbar-right
+                    li
+                      a href="#" data-target="#message_modal" data-toggle="modal"
+                        i.fa.fa-envelope-o
+                        |&nbsp;Написать нам
+                    li
+                      = active_link_to contacts_path
+                        |Контакты
+        .row
+          .container-fluid
+            h1
+              = @title
+            h2.text-center.text-danger Сайт находится в разработке
+        .row
+          .container-fluid
+            .well.well-lg.text-uppercase.text-center
+              |Компания ТОО «ПромСнабОборудование» является представителем от ведущих Заводов Российских производителей,
+              |так же занимается поставкой оборудования для промышленных предприятий и частных лиц.
+              br
+              |Мы оказываем полный спектр услуг в этом направлении: консультации по выбору оборудования, обработка заявки,
+              |&nbsp;подготовка полного пакета документов, отгрузка оборудования по всему Казахстану.
+        .row
+          .col-lg-2
+            ul.nav.nav-pills.nav-stacked
+              - @categories.each do |category|
+                li
+                  = active_link_to category_path category.number
+                    = category.name
+          .col-lg-10
+            .container-fluid
+              = yield
+    footer
+      .container-fluid
+        .pull-right
+          span
+            b
+              |ПромСнабОборудование &copy;&nbsp;
+              = DateTime.now.strftime("%Y")
 /! Modal
 #message_modal.modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
   .modal-dialog role="document"
