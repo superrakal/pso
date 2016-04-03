@@ -1,5 +1,4 @@
 $(document).on 'ready page:load', ->
-  $('.preloader').addClass 'animated slideOutUp'
   $('.logo_gif').width($('.logo').width()*0.2)
   $('.logo_gif').height($('.logo').width()*0.2)
   $('.logo_gif').css('margin-top', $('.logo').width()*(-0.1))
