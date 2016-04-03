@@ -8,24 +8,25 @@ html lang="ru"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    = favicon_link_tag
   body
+    .preloader
+      .logo-gif
     .site-wrapper
       #bg
       .container-fluid
         .row
           .container-fluid
-            .col-lg-3.col-sm-6.col-xs-12
-              = link_to root_path
-                .logo
-                  = image_tag "logo_left.png"
-                  = image_tag "logo.gif", :class => "gif"
-                  = image_tag "logo_right.png"
+            .col-lg-3.col-sm-6.col-xs-12.logo
+              = image_tag "logo_left.png", :class => "logo_left"
+              = image_tag "logo.gif", :class => "logo_gif"
+              = image_tag "logo_right.png", :class => "logo_right"
         .row
           .container-fluid
             nav.navbar.navbar-default
               .container-fluid
                 .navbar-header
-                  button.navbar-toggle.collapsed aria-expanded="false" data-target="top-menu" data-toggle="collapse" type="button"
+                  button.navbar-toggle.collapsed aria-expanded="false" data-target="#top-menu" data-toggle="collapse" type="button"
                     span.sr-only Toggle navigation
                     span.icon-bar
                     span.icon-bar
@@ -67,7 +68,7 @@ html lang="ru"
           .col-lg-2
             ul.nav.nav-pills.nav-stacked
               - @categories.each do |category|
-                li
+                li.category
                   = active_link_to category_path category.number
                     = category.name
           .col-lg-10
@@ -80,7 +81,7 @@ html lang="ru"
             b
               |ПромСнабОборудование &copy;&nbsp;
               = DateTime.now.strftime("%Y")
-/! Modal
+
 #message_modal.modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
   .modal-dialog role="document"
     .modal-content
@@ -117,6 +118,4 @@ coffee:
       success: ->
         $('#message_modal form').fadeOut "fast", ->
           $('.success_message').fadeIn()
-
-
     return false

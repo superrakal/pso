@@ -5,6 +5,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( logo.gif )
 Rails.application.config.assets.precompile += %w( logo_left.png )
 Rails.application.config.assets.precompile += %w( logo_right.png )
+Rails.application.config.assets.precompile += %w( favicon.ico )
 Rails.application.config.assets.precompile += %w( ckeditor/* )
 
 # Add additional assets to the asset load path

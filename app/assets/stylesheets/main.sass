@@ -31,25 +31,32 @@ footer
 
 
 .logo
+  width: 290px
   height: 100px
   line-height: 100px
-  margin: -20px 0 20px 0
-  img
-    height: 70px
-    &.gif
-      height: 180px
-      margin: -20px -55px 0 -55px
-
-
+  position: relative
+  .logo_left
+    width: 40%
+    margin-right: 10%
+  .logo_right
+    width: 40%
+    margin-left: 10%
+  .logo_gif
+    position: absolute
+    top: 50%
+    left: 50%
 .nav-pills
   & > li
-    background-color: #f3f3f3
+    background-color: transparent
     border: 1px solid #2655A3
     a
+      display: block
+      width: 100%
       color: #2655A3
       font-weight: bold
-      &.active, &.active:hover
-        background-color: #2655A3
+      &.active, &.active:hover,  &:hover
+        background-color: #2655A3 !important
+        transition: background-color 0.5s linear
         color: white
 
 
@@ -69,3 +76,22 @@ footer
   
 .nav-stacked
   margin-bottom: 20px !important
+
+.preloader
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #fff
+  z-index: 100
+
+.logo-gif
+  z-index: 101
+  width: 200px
+  height: 200px
+  margin: -100px 0 0 -100px
+  position: absolute
+  top: 50%
+  left: 50%
+  background: asset_url('logo.gif') center no-repeat
