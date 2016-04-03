@@ -26418,3 +26418,53 @@ MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000251986s
 MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
 MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000339744s
 Completed 200 OK in 61ms (Views: 58.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2016-04-03 15:34:48 +0600
+Processing by ContactsController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"contacts_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000457914s
+  Rendered contacts/index.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00035564799999999997s
+Completed 200 OK in 59ms (Views: 56.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2016-04-03 15:37:43 +0600
+Processing by ContactsController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"contacts_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000424476s
+  Rendered contacts/index.html.slim within layouts/application (4.3ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000423115s
+Completed 200 OK in 68ms (Views: 65.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2016-04-03 15:38:22 +0600
+Processing by ContactsController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"contacts_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00046475099999999996s
+  Rendered contacts/index.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000364024s
+Completed 200 OK in 1478ms (Views: 1475.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2016-04-03 15:38:33 +0600
+Processing by ContactsController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"contacts_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000274882s
+  Rendered contacts/index.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000352461s
+Completed 200 OK in 1258ms (Views: 1256.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2016-04-03 15:38:57 +0600
+Processing by ContactsController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"contacts_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000262817s
+  Rendered contacts/index.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000374518s
+Completed 200 OK in 1442ms (Views: 1440.4ms)
