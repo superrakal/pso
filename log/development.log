@@ -29041,3 +29041,38 @@ sNGC0Ywg0L3QtSDQvdGD0LbQvdC+Ljwvc21hbGw+PC9ocj4=
 
   Rendered text template (0.0ms)
 Completed 200 OK in 1728ms (Views: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:07:36 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00027552999999999996s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000376266s
+  Rendered main/index.html.slim within layouts/application (2.3ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000358529s
+Completed 200 OK in 59ms (Views: 49.8ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2016-04-04 12:08:32 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00041137599999999997s
+  Rendered categories/show.html.slim within layouts/application (2.3ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000394317s
+Completed 200 OK in 106ms (Views: 104.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:11:55 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000304113s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000390327s
+  Rendered main/index.html.slim within layouts/application (4.5ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000429711s
+Completed 200 OK in 1224ms (Views: 1223.1ms)
