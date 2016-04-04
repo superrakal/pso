@@ -1,8 +1,9 @@
 .row
-  - @categories.each do |category|
-    .col-md-4.col-sm-6.col-xs-12.category
-      = link_to category_path(category.number)
-        .category-wrapper.text-center
-          img src=category.image(:original)
-        .category-title
-          = category.name
+  .container
+    - @categories.each do |category|
+      .col-md-4.col-sm-6.col-xs-12.category
+        = link_to category_path(category.number)
+          .category-wrapper.text-center
+            img src=category.image(:original)
+          .category-title
+            = category.name
