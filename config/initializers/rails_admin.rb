@@ -25,6 +25,7 @@ RailsAdmin.config do |config|
 
 
   config.model Category do
+    field :number
     field :name
     field :content, :ck_editor
     field :image

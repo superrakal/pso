@@ -11,6 +11,7 @@ ru:
       about_us_page:
         content: Содержание
       category:
+        number: Порядковый номер
         name: Имя
         content: Содержание
         image: Изображение
