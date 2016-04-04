@@ -11,7 +11,8 @@ class MainController < ApplicationController
   end
 
   def send_message
-    MessageMailerWorker.perform(params[:name], params[:email], params[:message])
+    MessageMailer.new_message(params[:name], params[:email], params[:message]).deliver_now
     render :nothing => true, :status => :ok
   end
+
 end

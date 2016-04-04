@@ -28848,3 +28848,196 @@ sNGC0Ywg0L3QtSDQvdGD0LbQvdC+Ljwvc21hbGw+PC9ocj4=
 
   Rendered text template (0.0ms)
 Completed 200 OK in 30126ms (Views: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:02:38 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000417411s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000395687s
+  Rendered main/index.html.slim within layouts/application (13.5ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000428473s
+Completed 200 OK in 875ms (Views: 866.7ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2016-04-04 12:02:44 +0600
+Processing by MainController#send_message as */*
+  Parameters: {"name"=>"21321213", "email"=>"topol009@mail.ru", "message"=>"2132132132131"}
+  Rendered message_mailer/new_message.html.slim (3.1ms)
+
+MessageMailer#new_message: processed outbound mail in 150.4ms
+
+Sent mail to topol009@mail.ru (3.2ms)
+Date: Mon, 04 Apr 2016 12:02:44 +0600
+To: topol009@mail.ru
+Message-ID: <57020384a3af0_1aaf333c2989145a@topolnyaknsu.mail>
+Subject: =?UTF-8?Q?=D0=9D=D0=BE=D0=B2=D0=BE=D0=B5?=
+ =?UTF-8?Q?_=D1=81=D0=BE=D0=BE=D0=B1=D1=89=D0=B5=D0=BD=D0=B8=D0=B5_=D1=81?=
+ =?UTF-8?Q?_=D1=81=D0=B0=D0=B9=D1=82=D0=B0!?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGgyPtCd0L7QstC+0LUg0YHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC
+0LAgcHNvLmt6PC9oMj48aHIgLz48cD7QkNCy0YLQvtGAINGB0L7QvtCx0YnQ
+tdC90LjRjzombmJzcDsyMTMyMTIxMzwvcD48cD5FbWFpbCDQsNCy0YLQvtGA
+0LA6Jm5ic3A7dG9wb2wwMDlAbWFpbC5ydTwvcD48cD7QodC+0L7QsdGJ0LXQ
+vdC40LU6Jm5ic3A7MjEzMjEzMjEzMjEzMTwvcD48aHI+PHNtYWxsPtCU0LDQ
+vdC90L7QtSDRgdC+0L7QsdGJ0LXQvdC40LUg0YHQs9C10L3QtdGA0LjRgNC+
+0LLQsNC90L4g0LHQvtGC0L7QvCwg0L3QsCDQvdC10LPQviDQvtGC0LLQtdGH
+0LDRgtGMINC90LUg0L3Rg9C20L3Qvi48L3NtYWxsPjwvaHI+
+
+  Rendered text template (0.0ms)
+Completed 200 OK in 162ms (Views: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:03:55 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000472061s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000395786s
+  Rendered main/index.html.slim within layouts/application (14.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.0005663479999999999s
+Completed 200 OK in 870ms (Views: 861.5ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2016-04-04 12:04:01 +0600
+Processing by MainController#send_message as */*
+  Parameters: {"name"=>"213213123", "email"=>"titovaox@mail.ru", "message"=>"21321321323"}
+  Rendered message_mailer/new_message.html.slim (3.4ms)
+
+MessageMailer#new_message: processed outbound mail in 153.3ms
+
+Sent mail to topolnyak012@mail.ru (3.2ms)
+Date: Mon, 04 Apr 2016 12:04:01 +0600
+To: topolnyak012@mail.ru
+Message-ID: <570203d1bc603_1b622d962303676@topolnyaknsu.mail>
+Subject: =?UTF-8?Q?=D0=9D=D0=BE=D0=B2=D0=BE=D0=B5?=
+ =?UTF-8?Q?_=D1=81=D0=BE=D0=BE=D0=B1=D1=89=D0=B5=D0=BD=D0=B8=D0=B5_=D1=81?=
+ =?UTF-8?Q?_=D1=81=D0=B0=D0=B9=D1=82=D0=B0!?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGgyPtCd0L7QstC+0LUg0YHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC
+0LAgcHNvLmt6PC9oMj48aHIgLz48cD7QkNCy0YLQvtGAINGB0L7QvtCx0YnQ
+tdC90LjRjzombmJzcDsyMTMyMTMxMjM8L3A+PHA+RW1haWwg0LDQstGC0L7R
+gNCwOiZuYnNwO3RpdG92YW94QG1haWwucnU8L3A+PHA+0KHQvtC+0LHRidC1
+0L3QuNC1OiZuYnNwOzIxMzIxMzIxMzIzPC9wPjxocj48c21hbGw+0JTQsNC9
+0L3QvtC1INGB0L7QvtCx0YnQtdC90LjQtSDRgdCz0LXQvdC10YDQuNGA0L7Q
+stCw0L3QviDQsdC+0YLQvtC8LCDQvdCwINC90LXQs9C+INC+0YLQstC10YfQ
+sNGC0Ywg0L3QtSDQvdGD0LbQvdC+Ljwvc21hbGw+PC9ocj4=
+
+  Rendered text template (0.0ms)
+Completed 200 OK in 164ms (Views: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:05:09 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000399543s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00039547700000000004s
+  Rendered main/index.html.slim within layouts/application (13.7ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000443712s
+Completed 200 OK in 886ms (Views: 877.6ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2016-04-04 12:05:14 +0600
+Processing by MainController#send_message as */*
+  Parameters: {"name"=>"213123123", "email"=>"to@mail.ru", "message"=>"213213123"}
+  Rendered message_mailer/new_message.html.slim (3.1ms)
+
+MessageMailer#new_message: processed outbound mail in 153.6ms
+
+Sent mail to topolnyak012@mail.ru (1323.1ms)
+Date: Mon, 04 Apr 2016 12:05:14 +0600
+From: psokz@yandex.ru
+To: topolnyak012@mail.ru
+Message-ID: <5702041ac5efe_1bb627a88645947e@topolnyaknsu.mail>
+Subject: =?UTF-8?Q?=D0=9D=D0=BE=D0=B2=D0=BE=D0=B5?=
+ =?UTF-8?Q?_=D1=81=D0=BE=D0=BE=D0=B1=D1=89=D0=B5=D0=BD=D0=B8=D0=B5_=D1=81?=
+ =?UTF-8?Q?_=D1=81=D0=B0=D0=B9=D1=82=D0=B0!?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGgyPtCd0L7QstC+0LUg0YHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC
+0LAgcHNvLmt6PC9oMj48aHIgLz48cD7QkNCy0YLQvtGAINGB0L7QvtCx0YnQ
+tdC90LjRjzombmJzcDsyMTMxMjMxMjM8L3A+PHA+RW1haWwg0LDQstGC0L7R
+gNCwOiZuYnNwO3RvQG1haWwucnU8L3A+PHA+0KHQvtC+0LHRidC10L3QuNC1
+OiZuYnNwOzIxMzIxMzEyMzwvcD48aHI+PHNtYWxsPtCU0LDQvdC90L7QtSDR
+gdC+0L7QsdGJ0LXQvdC40LUg0YHQs9C10L3QtdGA0LjRgNC+0LLQsNC90L4g
+0LHQvtGC0L7QvCwg0L3QsCDQvdC10LPQviDQvtGC0LLQtdGH0LDRgtGMINC9
+0LUg0L3Rg9C20L3Qvi48L3NtYWxsPjwvaHI+
+
+  Rendered text template (0.0ms)
+Completed 200 OK in 1484ms (Views: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:06:16 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00029153800000000004s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000310541s
+  Rendered main/index.html.slim within layouts/application (2.8ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000385243s
+Completed 200 OK in 65ms (Views: 55.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 12:06:18 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000328726s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037356099999999996s
+  Rendered main/index.html.slim within layouts/application (2.6ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00034437199999999996s
+Completed 200 OK in 78ms (Views: 76.4ms)
+
+
+Started POST "/send_message" for 127.0.0.1 at 2016-04-04 12:06:22 +0600
+Processing by MainController#send_message as */*
+  Parameters: {"name"=>"213213213", "email"=>"to12pol009@mail.ru", "message"=>"213213213"}
+  Rendered message_mailer/new_message.html.slim (0.0ms)
+
+MessageMailer#new_message: processed outbound mail in 6.0ms
+
+Sent mail to topolnyak012@gmail.com (1715.1ms)
+Date: Mon, 04 Apr 2016 12:06:22 +0600
+From: psokz@yandex.ru
+To: topolnyak012@gmail.com
+Message-ID: <5702045ed79c8_1bb632bfcc059553@topolnyaknsu.mail>
+Subject: =?UTF-8?Q?=D0=9D=D0=BE=D0=B2=D0=BE=D0=B5?=
+ =?UTF-8?Q?_=D1=81=D0=BE=D0=BE=D0=B1=D1=89=D0=B5=D0=BD=D0=B8=D0=B5_=D1=81?=
+ =?UTF-8?Q?_=D1=81=D0=B0=D0=B9=D1=82=D0=B0!?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGgyPtCd0L7QstC+0LUg0YHQvtC+0LHRidC10L3QuNC1INGBINGB0LDQudGC
+0LAgcHNvLmt6PC9oMj48aHIgLz48cD7QkNCy0YLQvtGAINGB0L7QvtCx0YnQ
+tdC90LjRjzombmJzcDsyMTMyMTMyMTM8L3A+PHA+RW1haWwg0LDQstGC0L7R
+gNCwOiZuYnNwO3RvMTJwb2wwMDlAbWFpbC5ydTwvcD48cD7QodC+0L7QsdGJ
+0LXQvdC40LU6Jm5ic3A7MjEzMjEzMjEzPC9wPjxocj48c21hbGw+0JTQsNC9
+0L3QvtC1INGB0L7QvtCx0YnQtdC90LjQtSDRgdCz0LXQvdC10YDQuNGA0L7Q
+stCw0L3QviDQsdC+0YLQvtC8LCDQvdCwINC90LXQs9C+INC+0YLQstC10YfQ
+sNGC0Ywg0L3QtSDQvdGD0LbQvdC+Ljwvc21hbGw+PC9ocj4=
+
+  Rendered text template (0.0ms)
+Completed 200 OK in 1728ms (Views: 0.5ms)
