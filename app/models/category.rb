@@ -4,7 +4,7 @@ class Category
   include Mongoid::Paperclip
 
   field :name
-  field :number
+  field :number, type: Integer
   field :content
 
   has_mongoid_attached_file :image,

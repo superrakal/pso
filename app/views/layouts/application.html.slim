@@ -99,6 +99,9 @@ html lang="ru"
                   input.form-control#email placeholder="Email" name="email" required=true type="email"
               .col-md-12
                 .form-group
+                  input.form-control#organization placeholder="Название организации" name="email" required=true type="text"
+              .col-md-12
+                .form-group
                   textarea.form-control#message placeholder="Сообщение" name="message" required=true
         .modal-footer
           button.btn.btn-primary#send_button type="submit"  Отправить
@@ -112,7 +115,7 @@ coffee:
     $.ajax
       type: "POST"
       url: '/send_message'
-      data: { name : $('#name').val(), email: $('#email').val(), message: $('#message').val() }
+      data: { name : $('#name').val(), email: $('#email').val(), organization: $('#organization').val(), message: $('#message').val() }
       success: ->
         $('#message_modal form').fadeOut "fast", ->
           $('.success_message').fadeIn()
