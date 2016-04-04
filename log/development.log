@@ -27250,3 +27250,273 @@ MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000357853s
 MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
 MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000487996s
 Completed 200 OK in 147ms (Views: 146.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:43:24 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000727077s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000727583s
+  Rendered main/index.html.slim within layouts/application (14.6ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000379016s
+Completed 200 OK in 4769ms (Views: 4759.9ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2016-04-04 09:43:33 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00047606s
+  Rendered categories/show.html.slim within layouts/application (3.3ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000399131s
+Completed 200 OK in 84ms (Views: 81.7ms)
+
+
+Started GET "/categories/2" for 127.0.0.1 at 2016-04-04 09:43:34 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>2}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000287374s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00036438400000000004s
+Completed 200 OK in 60ms (Views: 58.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:43:36 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000296077s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000281193s
+  Rendered main/index.html.slim within layouts/application (5.6ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00033858s
+Completed 200 OK in 115ms (Views: 113.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:44:37 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000242901s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00035909099999999997s
+  Rendered main/index.html.slim within layouts/application (7.7ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000361238s
+Completed 200 OK in 1351ms (Views: 1350.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:44:57 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000328149s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000317949s
+  Rendered main/index.html.slim within layouts/application (2.6ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000365774s
+Completed 200 OK in 1388ms (Views: 1386.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:45:44 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000292348s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000315117s
+  Rendered main/index.html.slim within layouts/application (6.7ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000336231s
+Completed 200 OK in 123ms (Views: 122.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:50:02 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00025089s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000211697s
+  Rendered main/index.html.slim within layouts/application (2.3ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000343555s
+Completed 200 OK in 158ms (Views: 156.9ms)
+
+
+Started GET "/public/kp.pdf" for 127.0.0.1 at 2016-04-04 09:50:04 +0600
+
+ActionController::RoutingError (No route matches [GET] "/public/kp.pdf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:50:18 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000366306s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000367116s
+  Rendered main/index.html.slim within layouts/application (15.2ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00042349s
+Completed 200 OK in 901ms (Views: 892.5ms)
+
+
+Started GET "/public/kp.pdf" for 127.0.0.1 at 2016-04-04 09:50:20 +0600
+
+ActionController::RoutingError (No route matches [GET] "/public/kp.pdf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:50:26 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037423s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000313233s
+  Rendered main/index.html.slim within layouts/application (2.7ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000361955s
+Completed 200 OK in 168ms (Views: 166.5ms)
+
+
+Started GET "/public/kp.pdf" for 127.0.0.1 at 2016-04-04 09:50:27 +0600
+
+ActionController::RoutingError (No route matches [GET] "/public/kp.pdf"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/egor/.rvm/rubies/ruby-2.1.6/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:51:22 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000379978s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00027262499999999997s
+  Rendered main/index.html.slim within layouts/application (2.4ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000394864s
+Completed 200 OK in 210ms (Views: 208.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:51:48 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00032802s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00028974100000000004s
+  Rendered main/index.html.slim within layouts/application (2.8ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00036196199999999996s
+Completed 200 OK in 173ms (Views: 171.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-04 09:51:59 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000275912s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000306911s
+  Rendered main/index.html.slim within layouts/application (5.8ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00038821900000000003s
+Completed 200 OK in 59ms (Views: 57.3ms)
