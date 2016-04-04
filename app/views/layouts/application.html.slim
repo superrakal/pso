@@ -47,7 +47,7 @@ html lang="ru"
                         i.fa.fa-envelope-o
                         |&nbsp;Написать нам
                     li
-                      = active_link_to contacts_path
+                      = active_link_to contacts_path, data: { no_turbolink: true }
                         |Контакты
         .row
           .container-fluid
