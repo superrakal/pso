@@ -22,7 +22,16 @@ Rails.application.configure do
   config.assets.digest = true
   config.assets.raise_runtime_errors = true
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { address: 'localhost', port: 1025 }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_options = {from: 'psokz@yandex.ru'}
+  ActionMailer::Base.smtp_settings =
+      {
+          address:              'smtp.yandex.ru',
+          port:                  25,
+          domain:               'yandex.ru',
+          user_name:            'psokz@yandex.ru',
+          password:             'basset2011',
+          authentication:       'plain',
+          enable_starttls_auto:  true
+      }
 end

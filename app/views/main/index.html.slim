@@ -1,7 +1,7 @@
 .row
   .container
     - @categories.each do |category|
-      .col-md-4.col-sm-6.col-xs-12.category-container
+      .col-sm-6.col-xs-12.category-container
         = link_to category_path(category.number)
           .category-wrapper.text-center
             img src=category.image(:original)
