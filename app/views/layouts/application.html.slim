@@ -11,7 +11,6 @@ html lang="ru"
     = favicon_link_tag
   body
     .site-wrapper
-      #bg
       .container-fluid
         .row
           .container-fluid
@@ -41,7 +40,6 @@ html lang="ru"
                       a href="kp.pdf" target="_blank"
                         i.fa.fa-download
                         |&nbsp;Скачать прайс
-                  ul.nav.navbar-nav.navbar-right
                     li
                       a href="#" data-target="#message_modal" data-toggle="modal"
                         i.fa.fa-envelope-o
@@ -51,17 +49,16 @@ html lang="ru"
                         |Контакты
         .row
           .container-fluid
-            h1
-              = @title
-            h2.text-center.text-danger Сайт находится в разработке
-        .row
-          .container-fluid
             .well.well-lg.text-uppercase.text-center
               |Компания ТОО «ПромСнабОборудование» является представителем от ведущих Заводов Российских производителей,
               |так же занимается поставкой оборудования для промышленных предприятий и частных лиц.
               br
               |Мы оказываем полный спектр услуг в этом направлении: консультации по выбору оборудования, обработка заявки,
               |&nbsp;подготовка полного пакета документов, отгрузка оборудования по всему Казахстану.
+        .row
+          .container-fluid
+            h1
+              = @title
         .row
           .col-lg-2
             ul.nav.nav-pills.nav-stacked
@@ -79,6 +76,7 @@ html lang="ru"
             b
               |ПромСнабОборудование &copy;&nbsp;
               = DateTime.now.strftime("%Y")
+    #bg
 
 #message_modal.modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
   .modal-dialog role="document"
