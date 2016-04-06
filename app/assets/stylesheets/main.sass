@@ -6,10 +6,15 @@ html, body
 body
   position: relative
 
+.logo_left, .logo_right
+  display: inline-block
+  color: #2655A3
+  font-size: 25px
+  font-weight: bold
 #bg
-  height: 100%
-  width: 100%
-  position: absolute
+  height: 100vh
+  width: 100vw
+  position: fixed
   z-index: -1
   top: 0
   left: 0
@@ -33,22 +38,27 @@ footer
   box-shadow: none !important
   outline: none !important
 
-
+.small_logo
+  text-align: center
+  font-weight: bold
+  font-size: 25px
+  margin-top: 15px
 .logo
+  margin-top: 10px
   width: 290px
   height: 100px
   line-height: 100px
   position: relative
   .logo_left
-    width: 40%
-    margin-right: 10%
+    width: 150px
+    margin-right: 10px
+
   .logo_right
-    width: 40%
-    margin-left: 10%
-  .logo_gif
-    position: absolute
-    top: 50%
-    left: 50%
+    width: 150px
+
+.text-primary
+  color: #2655A3 !important
+
 .nav-pills
   & > li
     background-color: #2655A3

@@ -29686,3 +29686,417 @@ MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000318266s
 MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
 MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000351461s
 Completed 200 OK in 55ms (Views: 53.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-06 11:44:00 +0600
+Processing by MainController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000414515s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000419761s
+  Rendered main/index.html.slim within layouts/application (13.7ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000395375s
+Completed 200 OK in 2137ms (Views: 2128.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-06 11:44:08 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000339578s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00036422500000000003s
+  Rendered main/index.html.slim within layouts/application (5.4ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00032163199999999997s
+Completed 200 OK in 125ms (Views: 123.1ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:44:10 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000343057s
+  Rendered categories/show.html.slim within layouts/application (1.8ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00038297s
+Completed 200 OK in 53ms (Views: 51.5ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:44:32 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000463825s
+  Rendered categories/show.html.slim within layouts/application (2.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000370391s
+Completed 200 OK in 1328ms (Views: 1326.3ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:45:38 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000490649s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000352364s
+Completed 200 OK in 147ms (Views: 144.3ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:46:05 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00030465600000000005s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00039826200000000003s
+Completed 200 OK in 1305ms (Views: 1302.9ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:46:26 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000496205s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000365975s
+Completed 200 OK in 1411ms (Views: 1408.8ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:46:36 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00032999s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000366564s
+Completed 200 OK in 1387ms (Views: 1385.2ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:49:08 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00032926600000000004s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000352888s
+Completed 200 OK in 1356ms (Views: 1354.3ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:49:38 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000326444s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000466655s
+Completed 200 OK in 1485ms (Views: 1483.6ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:50:17 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000344845s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00039453700000000003s
+Completed 200 OK in 98ms (Views: 96.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:50:18 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000339125s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000348302s
+Completed 200 OK in 57ms (Views: 55.1ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:10 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037226800000000003s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000372434s
+Completed 200 OK in 197ms (Views: 195.9ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:11 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00031924700000000004s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00033770599999999995s
+Completed 200 OK in 65ms (Views: 63.5ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:20 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037876999999999995s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000413476s
+Completed 200 OK in 189ms (Views: 187.7ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:32 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00028032299999999997s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037079500000000004s
+Completed 200 OK in 193ms (Views: 191.6ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:44 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00032272800000000004s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000497195s
+Completed 200 OK in 203ms (Views: 201.8ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:54 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00040256900000000003s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000356533s
+Completed 200 OK in 1260ms (Views: 1258.7ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:51:56 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000321438s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000319103s
+Completed 200 OK in 65ms (Views: 63.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:52:03 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000305956s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000399875s
+Completed 200 OK in 1232ms (Views: 1231.0ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:52:19 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000392714s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000371269s
+Completed 200 OK in 56ms (Views: 54.3ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:52:35 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00030076800000000003s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000417751s
+Completed 200 OK in 204ms (Views: 202.5ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:54:32 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000290648s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000443204s
+Completed 200 OK in 1355ms (Views: 1353.6ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:54:50 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00033234299999999997s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000414267s
+Completed 200 OK in 1508ms (Views: 1506.4ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:55:24 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00031736000000000004s
+  Rendered categories/show.html.slim within layouts/application (0.0ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037855800000000003s
+Completed 200 OK in 1479ms (Views: 1477.2ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:55:44 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.0003363s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000350792s
+Completed 200 OK in 1378ms (Views: 1376.2ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:56:18 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000332804s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.0005985960000000001s
+Completed 200 OK in 208ms (Views: 205.8ms)
+
+
+Started GET "/categories/3" for 127.0.0.1 at 2016-04-06 11:56:40 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>3}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000321535s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000362612s
+Completed 200 OK in 1316ms (Views: 1314.2ms)
+
+
+Started GET "/categories/5" for 127.0.0.1 at 2016-04-06 11:56:48 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>5}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00041762799999999997s
+Completed 404 Not Found in 22ms
+
+Mongoid::Errors::DocumentNotFound (
+translation missing: ru.mongoid.errors.messages.message_title:
+  translation missing: ru.mongoid.errors.messages.document_with_attributes_not_found.message
+translation missing: ru.mongoid.errors.messages.summary_title:
+  translation missing: ru.mongoid.errors.messages.document_with_attributes_not_found.summary
+translation missing: ru.mongoid.errors.messages.resolution_title:
+  translation missing: ru.mongoid.errors.messages.document_with_attributes_not_found.resolution):
+  app/controllers/categories_controller.rb:4:in `show'
+
+
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/categories/5" for 127.0.0.1 at 2016-04-06 11:56:48 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>5}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000322879s
+Completed 404 Not Found in 2ms
+
+Mongoid::Errors::DocumentNotFound (
+translation missing: ru.mongoid.errors.messages.message_title:
+  translation missing: ru.mongoid.errors.messages.document_with_attributes_not_found.message
+translation missing: ru.mongoid.errors.messages.summary_title:
+  translation missing: ru.mongoid.errors.messages.document_with_attributes_not_found.summary
+translation missing: ru.mongoid.errors.messages.resolution_title:
+  translation missing: ru.mongoid.errors.messages.document_with_attributes_not_found.resolution):
+  app/controllers/categories_controller.rb:4:in `show'
+
+
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/egor/.rvm/gems/ruby-2.1.6/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-06 11:57:52 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000323601s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000327075s
+  Rendered main/index.html.slim within layouts/application (2.9ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000347556s
+Completed 200 OK in 60ms (Views: 56.6ms)
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2016-04-06 11:57:56 +0600
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037506400000000004s
+  Rendered categories/show.html.slim within layouts/application (0.1ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00036122s
+Completed 200 OK in 57ms (Views: 55.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-06 11:58:24 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00025647s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000343627s
+  Rendered main/index.html.slim within layouts/application (2.3ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.000396242s
+Completed 200 OK in 1295ms (Views: 1293.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2016-04-06 11:58:33 +0600
+Processing by ContactsController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"contacts_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00058793s
+  Rendered contacts/index.html.slim within layouts/application (2.4ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00037015599999999996s
+Completed 200 OK in 53ms (Views: 51.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-06 11:58:35 +0600
+Processing by MainController#index as HTML
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"main_pages", "filter"=>{}, "singleBatch"=>true}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00023897500000000002s
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00026974100000000005s
+  Rendered main/index.html.slim within layouts/application (2.7ms)
+MONGODB | localhost:27017 | pso_development.find | STARTED | {"find"=>"categories", "filter"=>{}, "sort"=>{"number"=>1}}
+MONGODB | localhost:27017 | pso_development.find | SUCCEEDED | 0.00035479900000000004s
+Completed 200 OK in 102ms (Views: 101.0ms)

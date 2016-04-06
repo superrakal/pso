@@ -14,10 +14,12 @@ html lang="ru"
       .container-fluid
         .row
           .container-fluid
-            .col-lg-3.col-sm-6.col-xs-12.logo
-              = image_tag "logo_left.png", :class => "logo_left"
+            .col-xs-12.small_logo.visible-xs
+              .text-primary ПромСнабОборудование
+            .col-lg-4.col-sm-6.col-xs-12.logo.hidden-xs
+              .logo_left ПромСнаб
               = image_tag "logo.gif", :class => "logo_gif"
-              = image_tag "logo_right.png", :class => "logo_right"
+              .logo_right борудование
         .row
           .container-fluid
             nav.navbar.navbar-default
